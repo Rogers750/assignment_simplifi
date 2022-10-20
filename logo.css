@@ -1,0 +1,82 @@
+body{
+    background-color: #36454f;
+    overflow: hidden;
+}
+
+.parent{
+    height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+transform: rotate(45deg);
+}
+
+.child {
+    position:relative;
+    background-color: #36454f;
+    border: solid 30px;
+    border-left: 30px solid greenyellow;
+    border-right: 30px solid grey;
+    border-top: 30px solid orangered;
+    border-bottom: 30px solid #00B5E2;
+    opacity: 0.7;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .html-css{
+        text-align: center;
+        transform: rotate(-45deg);
+        font-size: xx-large;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+    }
+    
+    .and{
+          color:orangered;
+    }
+
+    .child:before {
+        content: '';
+        position: absolute;
+        top: 100%; right: 100%;
+        border-top: 30px solid teal;
+        border-left: 30px solid teal;
+        width: 0;
+    }
+
+    .child:after {
+        content: '';
+        position: absolute;
+        top: -10%; right: 100%;
+        border-top: 30px solid #964b00;
+        border-left: 30px solid #964b00;
+        width: 0;
+    }
+
+    .html-css:before{
+        content: '';
+        position: absolute;
+        top: 8%; right: -98%;
+        border-top: 30px solid #da7959;
+        border-left: 30px solid #da7959;
+        opacity: 0.9;
+        transform: rotate(45deg);
+        width: 0;
+    }
+
+    .html-css:after{
+        content: '';
+        position: absolute;
+        top: 625%; right: 41%;
+        border-top: 30px solid #6699CC;
+        border-left: 30px solid #6699CC;
+        opacity: 0.9;
+        transform: rotate(45deg);
+        width: 0;
+    }
+    
+
