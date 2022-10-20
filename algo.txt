@@ -1,0 +1,36 @@
+import java.util.HashMap;
+
+
+
+class Main {
+    public static void main(String[] args) {
+        // Your code here
+        HashMap<String, String> map = new HashMap<>();
+
+        map.put("Paris", "Skopje");
+        map.put("Zurich", "Amsterdam");
+        map.put("Prague", "Zurich");
+        map.put("Barcelona", "Berlin");
+        map.put("Kiev", "Prague");
+        map.put("Skopje", "Paris");
+        map.put("Amsterdam", "Barcelona");
+        map.put("Berlin", "Kiev");
+        map.put("Berlin", "Amsterdam");
+
+        String[] strArray = null;
+        String str = "Amsterdam Kiev Zurich Prague Berlin Barcelona";
+        strArray = str.split(" ");
+
+        String currCity="Kiev";
+
+        int count=0;
+
+        while(count!=strArray.length){
+            System.out.print(currCity+" ");
+            count++;
+            currCity=map.get(currCity);
+        }
+
+
+    }
+}
